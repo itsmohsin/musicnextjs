@@ -14,12 +14,15 @@ function Navbar({ className }: { className?: string }) {
                     <MenuItem setActive={setActive} active={active} item = "Home">
                     </MenuItem>
                     </Link>
-                    <MenuItem setActive={setActive} active={active} item = "Our Services">
-                        <div className="flex flex-col space-y-4 text-sm">
-                            <HoveredLink href="/Skin">Skin</HoveredLink>
-                            <HoveredLink href="/Hair">Hair</HoveredLink>
-                        </div>
+                    <Link href={"/"}>
+                        <MenuItem setActive={setActive} active={active} item = "Our Services">
+                            <div className="flex flex-col space-y-4 text-sm">
+                                <HoveredLink href="/Skin">Skin</HoveredLink>
+                                <HoveredLink href="/Hair">Hair</HoveredLink>
+                            </div>
                     </MenuItem>
+                    </Link>
+                    
                     <Link href={"/"}>
 
                     {/* <Link href={"/contact"}> */}
